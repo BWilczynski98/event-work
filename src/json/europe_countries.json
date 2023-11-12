@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Austria",
+    "dialCode": "+43",
+    "isoCode": "AT",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/at.svg"
+  },
+  {
+    "name": "Belgium",
+    "dialCode": "+32",
+    "isoCode": "BE",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/be.svg"
+  },
+  {
+    "name": "Bulgaria",
+    "dialCode": "+359",
+    "isoCode": "BG",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/bg.svg"
+  },
+  {
+    "name": "Croatia",
+    "dialCode": "+385",
+    "isoCode": "HR",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/hr.svg"
+  },
+  {
+    "name": "Cyprus",
+    "dialCode": "+357",
+    "isoCode": "CY",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/cy.svg"
+  },
+  {
+    "name": "Czech Republic",
+    "dialCode": "+420",
+    "isoCode": "CZ",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/cz.svg"
+  },
+  {
+    "name": "Denmark",
+    "dialCode": "+45",
+    "isoCode": "DK",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/dk.svg"
+  },
+  {
+    "name": "Estonia",
+    "dialCode": "+372",
+    "isoCode": "EE",
+    "flag": "https://cdn.kcak11.com/CountryFlags/countries/ee.svg"
+  }
+]

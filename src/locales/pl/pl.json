@@ -1,0 +1,36 @@
+{
+  "headerTitle": "Nazwa aplikacji {{appName}}",
+  "welcome": "Witaj",
+  "errors": {
+    "required": "To pole jest wymagane",
+    "email-invalid": "Adres email jest nieprawidłowy",
+    "invalid_phone_numer": "Podany numer telefonu jest nieprawidłowy",
+    "number": "Numer jest nieprawidłowy",
+    "areaCode": "Numer kierunkowy powinien mieć format: '+X', gdzie X to liczby."
+  },
+  "company_contact_form": {
+    "card_label": "Formularz kontaktowy",
+    "name": "Nazwa firmy",
+    "email": "Email",
+    "phoneNumber": "Numer telefonu",
+    "linkedIn": "linkedIn",
+    "linkedIn_desc": "Podaj pełen adres URL swojego profilu LinkedIn, na przykład: linkedin.com/in/nazwa-profilu",
+    "instagram": "Instagram",
+    "instagram_desc": "Podaj pełen adres URL swojego profilu Instagram, na przykład: instagram.com/nazwa-profilu",
+    "another_sources": "Inne źródła",
+    "another_sources_desc": "Jeśli masz inne ważne źródła internetowe, podaj ich pełne adresy URL. Na przykład: www.przykladowe-zrodlo.com",
+    "type_of_collaboration": "Rodzaj współpracy",
+    "description": "Opis współpracy",
+    "collaboration_type": {
+      "recruitment_assistance": "Pomoc w rekrutacji",
+      "project_support": "Wsparcie projektowe",
+      "another": "Inne"
+    },
+    "send_data": "Twoje informacje zostały przesłane. Wkrótce się z Tobą skontaktujemy."
+  },
+  "labels": {
+    "success": "Sukces!",
+    "send": "Wyślij",
+    "cancel": "Anuluj"
+  }
+}

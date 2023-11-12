@@ -1,0 +1,37 @@
+{
+  "headerTitle": "My {{appName}} Header Title",
+  "welcome": "Hello",
+  "errors": {
+    "required": "This field is required",
+    "email-invalid": "The email address is incorrect",
+    "invalid_phone_numer": "Not a valid phone number",
+    "number": "The number is incorrect",
+    "areaCode": "The area code should have the format: '+X', where X is numbers."
+  },
+  "company_contact_form": {
+    "card_label": "Contact Form",
+    "card_description": "Dzięki temu formularzowi możesz zgłosić zapytanie, nawiązać współpracę lub zadawać pytania dotyczące naszych usług.",
+    "name": "Company name",
+    "email": "Email",
+    "phoneNumber": "Phone number",
+    "linkedIn": "linkedIn",
+    "linkedIn_desc": "Please provide the full URL of your LinkedIn profile, for example: linkedin.com/in/username",
+    "instagram": "Instagram",
+    "instagram_desc": "Please provide the full URL of your Instagram profile, for example: instagram.com/username",
+    "another_sources": "Another sources",
+    "another_sources_desc": "If you have other important online sources, please provide their full URLs. For example: www.example-source.com",
+    "type_of_collaboration": "Type of collaboration",
+    "description": "Description ",
+    "collaboration_type": {
+      "recruitment_assistance": "Recruitment assistance",
+      "project_support": "Project support",
+      "another": "Another"
+    },
+    "send_data": "Your information has been submitted. We will contact you shortly."
+  },
+  "labels": {
+    "success": "Success!",
+    "send": "Send",
+    "cancel": "Cancel"
+  }
+}
