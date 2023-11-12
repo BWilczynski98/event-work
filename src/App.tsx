@@ -1,5 +1,3 @@
-import { Toaster } from "@/components/ui/toaster"
-
 import { Navigation } from "./components/Navigation/Navigation"
 import { ThemeProvider } from "./components/ThemeProvider/ThemeProvider"
 import { HomePage } from "./pages"
@@ -10,7 +8,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <ThemeProvider>
         <Navigation />
         {children}
-        <Toaster />
       </ThemeProvider>
     </div>
   )
