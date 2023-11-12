@@ -352,8 +352,14 @@ export const CompanyForm = () => {
                 </FormItem>
               )}
             />
+            {/* Buttons */}
             <div className="flex justify-end items-center space-x-4">
-              <Button variant={"ghost"}>{t("labels.cancel")}</Button>
+              <Button
+                variant={"ghost"}
+                type="button"
+              >
+                {t("labels.cancel")}
+              </Button>
               <Button
                 type="submit"
                 disabled={isLoading}
