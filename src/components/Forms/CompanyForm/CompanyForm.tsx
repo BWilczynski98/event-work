@@ -16,11 +16,13 @@ import allAreaCodes from "../../../json/countries_en.json"
 import "yup-phone-lite"
 import { useState } from "react"
 import { Loader2 } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 export const CompanyForm = () => {
   /**
    * Fake loading state
    */
+  const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
   const { t } = useTranslation()
   const { toast } = useToast()
@@ -357,6 +359,7 @@ export const CompanyForm = () => {
               <Button
                 variant={"ghost"}
                 type="button"
+                onClick={() => navigate(-1)}
               >
                 {t("labels.cancel")}
               </Button>
