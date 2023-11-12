@@ -1,6 +1,24 @@
 {
   "headerTitle": "Nazwa aplikacji {{appName}}",
   "welcome": "Witaj",
+  "navbar": {
+    "about": "O nas",
+    "current_news": "Aktualności",
+    "our-projects": "Nasze projekty",
+    "collaboration": "Współpraca",
+    "language_toggle_tooltip": "Switch to english"
+  },
+  "hero": {
+    "title": "Specjalistyczna rekrutacja i zarządzanie projektami",
+    "subtitle": "Kompetente rozwiązania dla Twojej firmy, solidne fundamenty dla Twojej kariery."
+  },
+  "collaboration": {
+    "title": "Chce nawiązać współpracę jako",
+    "employee": "Pracownik",
+    "company": "Firma",
+    "or": "Lub",
+    "back_to_home": "Powrót do strony głównej"
+  },
   "errors": {
     "required": "To pole jest wymagane",
     "email-invalid": "Adres email jest nieprawidłowy",

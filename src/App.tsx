@@ -4,7 +4,7 @@ import { HomePage } from "./pages"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <ThemeProvider>
         <Navigation />
         {children}

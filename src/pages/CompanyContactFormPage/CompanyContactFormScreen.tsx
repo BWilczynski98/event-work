@@ -5,8 +5,10 @@ import { Toaster } from "@/components/ui/toaster"
 export const CompanyContactFormScreen = () => {
   return (
     <Center>
+      <div className="py-10">
+        <CompanyForm />
+      </div>
       <Toaster />
-      <CompanyForm />
     </Center>
   )
 }

@@ -1,6 +1,24 @@
 {
   "headerTitle": "My {{appName}} Header Title",
   "welcome": "Hello",
+  "navbar": {
+    "about": "About",
+    "current_news": "Current News",
+    "our-projects": "Our Projects",
+    "collaboration": "Collaboration",
+    "language_toggle_tooltip": "Zmień język na polski"
+  },
+  "hero": {
+    "title": "Specialized recruitment and project management",
+    "subtitle": "Competent solutions for your business, a solid foundation for your career."
+  },
+  "collaboration": {
+    "title": "Wants to establish cooperation as",
+    "employee": "Employee",
+    "company": "Company",
+    "or": "Or",
+    "back_to_home": "Back to home page"
+  },
   "errors": {
     "required": "This field is required",
     "email-invalid": "The email address is incorrect",
