@@ -12,6 +12,26 @@
     "title": "Specjalistyczna rekrutacja i zarządzanie projektami",
     "subtitle": "Kompetente rozwiązania dla Twojej firmy, solidne fundamenty dla Twojej kariery."
   },
+  "about": {
+    "title": "O nas",
+    "subtitle_one": "Most Competence GmbH – Twój most do międzynarodowych możliwości",
+    "subtitle_two": "Specjaliści, na których możesz polegać",
+    "subtitle_three": "Kompleksowa obsługa projektów",
+    "subtitle_four": "Doświadczenie, które przekłada się na sukces",
+    "subtitle_five": "Nasze wartości",
+    "description_one": "Witamy w Most Competence GmbH, firmie, która od pięciu lat z powodzeniem buduje mosty międzykulturowe i zawodowe na rynku niemieckim. Jesteśmy zespołem specjalistów pochodzących z Polski, których pasją jest łączenie ludzi i możliwości. Nasza misja to tworzenie rozwiązań, które pomagają firmom w Niemczech rozwijać ich potencjał poprzez wykorzystanie kwalifikacji i umiejętności polskich pracowników",
+    "description_two": "Jako niemiecka firma z polskimi korzeniami, Most Competence GmbH rozumie wyjątkowe wyzwania stojące przed przedsiębiorstwami w Niemczech oraz potrzeby pracowników z Polski. Nasze usługi rekrutacyjne nie ograniczają się do samego procesu znalezienia odpowiednich kandydatów. Zajmujemy się kompleksową opieką, począwszy od rekrutacji, poprzez doradztwo w sprawach formalnych, aż po wsparcie w kwestii zakwaterowania. Dzięki nam niemieckie firmy znajdują wykwalifikowanych pracowników, a polscy pracownicy odnajdują ścieżkę do rozwoju zawodowego w nowym środowisku",
+    "description_three": "Nasze doświadczenie w zarządzaniu projektami jest fundamentem, na którym budujemy nasz sukces i sukces naszych klientów. Rozumiemy, że nie każde przedsiębiorstwo chce lub może zwiększyć swoją stałą załogę dla jednorazowego projektu. Dlatego oferujemy elastyczne rozwiązania w postaci tymczasowej współpracy, która idealnie wpasowuje się w krótkoterminowe potrzeby i plany strategiczne naszych partnerów. Od fazy planowania po ostateczną realizację – jesteśmy z Tobą na każdym etapie projektu",
+    "description_four": "Nasza ekspertyza sięga dalej niż tradycyjne usługi rekrutacyjne i zarządzanie projektami. Specjalizujemy się również w koordynacji wydarzeń dla branży sprzątającej, współpracując z renomowanymi firmami takimi jak New Line i Biber Services. Nasze doświadczenie i umiejętności w zarządzaniu logistyką i operacjami na miejscu czynią każde wydarzenie, niezależnie od jego skali, wzorem efektywności i profesjonalizmu",
+    "description_five": "Praca z nami to gwarancja zaangażowania, profesjonalizmu i indywidualnego podejścia. Zaufanie, które przez lata budowaliśmy między naszymi klientami a pracownikami, jest dla nas najcenniejszą walutą. Most Competence GmbH to nie tylko pośrednik, to partner, na którym możesz polegać",
+    "invitation_to_contact": "Zapraszamy do współpracy – MostCompetence GmbH, bo kompetencja to podstawa trwałego sukcesu."
+  },
+  "current-news": {
+    "title": "Aktualności"
+  },
+  "our-projects": {
+    "title": "Nasze projekty"
+  },
   "collaboration": {
     "title": "Chce nawiązać współpracę jako",
     "employee": "Pracownik",

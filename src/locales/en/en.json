@@ -12,6 +12,26 @@
     "title": "Specialized recruitment and project management",
     "subtitle": "Competent solutions for your business, a solid foundation for your career."
   },
+  "about": {
+    "title": "About",
+    "subtitle_one": "Most Competence GmbH - Your bridge to international opportunities",
+    "subtitle_two": "Specialists you can rely on",
+    "subtitle_three": "Comprehensive project services",
+    "subtitle_four": "Experience that translates into success",
+    "subtitle_five": "Our values",
+    "description_one": "Welcome to Most Competence GmbH, a company that has been successfully building intercultural and professional bridges in the German market for five years. We are a team of professionals coming from Poland who are passionate about connecting people and opportunities. Our mission is to create solutions that help companies in Germany develop their potential by leveraging the qualifications and skills of Polish employees",
+    "description_two": "As a German company with Polish roots, Most Competence GmbH understands the unique challenges facing companies in Germany and the needs of employees from Poland. Our recruitment services are not limited to the mere process of finding suitable candidates. We provide comprehensive care, from recruiting, to advising on formal matters, to supporting accommodation. Thanks to us, German companies find qualified employees and Polish employees find a path to professional development in a new environment",
+    "description_three": "Our experience in project management is the foundation on which we build our success and the success of our clients. We understand that not every company is willing or able to increase its permanent staff for a one-time project. That's why we offer flexible solutions in the form of temporary partnerships that fit perfectly into our partners' short-term needs and strategic plans. From the planning phase to final implementation, we are with you at every stage of the project",
+    "description_four": "Our expertise extends beyond traditional recruitment and project management services. We also specialize in event coordination for the cleaning industry, working with renowned companies such as New Line and Biber Services. Our experience and skills in managing logistics and on-site operations make every event, regardless of its scale, a model of efficiency and professionalism",
+    "description_five": "Working with us is a guarantee of commitment, professionalism and individual approach. The trust we have built over the years between our clients and our employees is our most valuable currency. Most Competence GmbH is not just an intermediary, it is a partner you can rely on",
+    "invitation_to_contact": "We invite you to work with us - MostCompetence GmbH, because competence is the basis for lasting success."
+  },
+  "current-news": {
+    "title": "Current News"
+  },
+  "our-projects": {
+    "title": "Our Projects"
+  },
   "collaboration": {
     "title": "Wants to establish cooperation as",
     "employee": "Employee",
