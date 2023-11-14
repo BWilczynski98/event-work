@@ -1,36 +1,67 @@
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { useNavigationRefsContext } from "@/context/navigationRefsContext"
 import { ArrowRight, Menu } from "lucide-react"
-import { useState } from "react"
+import React, { RefObject, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 import { ModeToggle } from "../ModeToggle/ModeToggle"
 import { Button } from "../ui/button"
 
+/** Helpers */
+const plLang = "https://cdn.kcak11.com/CountryFlags/countries/pl.svg"
+const engLang = "https://cdn.kcak11.com/CountryFlags/countries/gb.svg"
+
 export const Navigation = () => {
-  const plLang = "https://cdn.kcak11.com/CountryFlags/countries/pl.svg"
-  const engLang = "https://cdn.kcak11.com/CountryFlags/countries/gb.svg"
+  /** HOOKS */
   const {
     t,
     i18n: { changeLanguage, language },
   } = useTranslation()
   const [currentLanguage, setCurrentLanguage] = useState(language)
+  const { aboutRef, currentNews, ourProjects } = useNavigationRefsContext()
+  console.log("🚀 ~ file: Navigation.tsx:23 ~ Navigation ~ aboutRef:", aboutRef)
 
+  /** Functions */
   const handleChangeLanguage = () => {
     const newLanguage = currentLanguage === "en" ? "pl" : "en"
     setCurrentLanguage(newLanguage)
     changeLanguage(newLanguage)
   }
 
+  const handleScrollToSection = (section: RefObject<HTMLElement>) => {
+    section.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  /** Constants */
+  type Link = {
+    label: string
+    onClick: () => void
+  }
+
+  const links: Link[] = [
+    { label: t("navbar.about"), onClick: () => handleScrollToSection(aboutRef) },
+    { label: t("navbar.current_news"), onClick: () => handleScrollToSection(currentNews) },
+    { label: t("navbar.our-projects"), onClick: () => handleScrollToSection(ourProjects) },
+    // Here you can add links in the future, if needed
+  ]
+
   return (
-    <div className="w-screen py-2 px-4 border-b-2 flex justify-between items-center">
+    <nav className="w-screen py-2 px-8 flex justify-between items-center">
       <h3 className="text-2xl font-semibold text-primary tracking-widest lg:hidden">GmbH</h3>
       <div className="hidden lg:flex items-center space-x-8">
         <h3 className="text-2xl font-semibold text-primary tracking-widest">GmbH</h3>
         <div className="space-x-2">
-          <Button variant={"ghost"}>{t("navbar.about")}</Button>
-          <Button variant={"ghost"}>{t("navbar.current_news")}</Button>
-          <Button variant={"ghost"}>{t("navbar.our-projects")}</Button>
+          {links.map((link, i) => (
+            <React.Fragment key={link.label + i}>
+              <Button
+                variant="ghost"
+                onClick={link.onClick}
+              >
+                {link.label}
+              </Button>
+            </React.Fragment>
+          ))}
         </div>
       </div>
 
@@ -75,12 +106,22 @@ export const Navigation = () => {
               <Menu />
             </SheetTrigger>
           </Button>
+          {/* Mobile menu */}
           <SheetContent>
             <div className="h-full flex flex-col justify-between">
               <div className="flex flex-col my-10 space-y-4">
-                <Button variant="ghost">About</Button>
-                <Button variant="ghost">Current News</Button>
-                <Button variant="ghost">Our Projects</Button>
+                {links.map((link, i) => (
+                  <React.Fragment key={link.label + i}>
+                    <SheetClose asChild>
+                      <Button
+                        variant="ghost"
+                        onClick={link.onClick}
+                      >
+                        {link.label}
+                      </Button>
+                    </SheetClose>
+                  </React.Fragment>
+                ))}
               </div>
               <div className="flex flex-col justify-center space-y-4">
                 <Button asChild>
@@ -119,6 +160,6 @@ export const Navigation = () => {
           </SheetContent>
         </Sheet>
       </div>
-    </div>
+    </nav>
   )
 }
