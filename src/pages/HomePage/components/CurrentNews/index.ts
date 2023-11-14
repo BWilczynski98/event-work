@@ -1,0 +1,1 @@
+export { CurrentNews } from "./CurrentNews"
