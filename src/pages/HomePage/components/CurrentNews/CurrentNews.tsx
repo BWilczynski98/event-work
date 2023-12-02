@@ -28,6 +28,7 @@ const NewsTile = ({ image, title, description }: NewsTileProps) => {
         src={image}
         className="w-full rounded-lg max-w-md"
         ref={ref}
+        alt="title"
       />
 
       <div className="md:w-1/2">
@@ -44,9 +45,8 @@ const NewsTile = ({ image, title, description }: NewsTileProps) => {
 }
 
 export const CurrentNews = () => {
-  console.log(window.location.origin)
   const lng = i18next.language
-  console.log(lng)
+
   const { currentNews } = useNavigationRefsContext()
   const { t } = useTranslation()
   const news = lng === "pl" ? current_news_pl : current_news_en
