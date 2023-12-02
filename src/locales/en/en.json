@@ -71,5 +71,8 @@
     "success": "Success!",
     "send": "Send",
     "cancel": "Cancel"
+  },
+  "news": {
+    "read_more": "Read more"
   }
 }
