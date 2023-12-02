@@ -16,16 +16,14 @@ const router = createBrowserRouter([
   {
     path: "/collaboration",
     element: <CollaborationPage />,
-    children: [
-      {
-        path: RoutesName.employeeContactForm,
-        element: <EmployeeContactFormPage />,
-      },
-    ],
   },
   {
     path: RoutesName.companyContactForm,
     element: <CompanyContactFormScreen />,
+  },
+  {
+    path: RoutesName.employeeContactForm,
+    element: <EmployeeContactFormPage />,
   },
 ])
 
