@@ -48,9 +48,9 @@ export const Navigation = () => {
 
   return (
     <nav className="w-screen py-2 px-8 flex justify-between items-center">
-      <h3 className="text-2xl font-semibold text-primary tracking-widest lg:hidden">GmbH</h3>
+      <h3 className="text-2xl font-semibold text-primary tracking-wide lg:hidden">Most Competence</h3>
       <div className="hidden lg:flex items-center space-x-8">
-        <h3 className="text-2xl font-semibold text-primary tracking-widest">GmbH</h3>
+        <h3 className="text-2xl font-semibold text-primary tracking-wide">Most Competence</h3>
         <div className="space-x-2">
           {links.map((link, i) => (
             <React.Fragment key={link.label + i}>
