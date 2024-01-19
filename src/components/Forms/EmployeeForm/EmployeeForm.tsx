@@ -332,7 +332,7 @@ export const EmployeeForm = () => {
                 </div>
               ) : null}
             </div>
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <FormField
                 control={form.control}
                 name="languages"
@@ -347,12 +347,12 @@ export const EmployeeForm = () => {
                 )}
               />
             </div>
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <DriveLicense form={form} />
             </div>
 
             {/* Buttons */}
-            <div className="flex justify-end items-center space-x-4 col-span-2">
+            <div className="flex justify-end items-center space-x-4 md:col-span-2">
               <Button
                 variant={"ghost"}
                 type="button"
