@@ -21,6 +21,8 @@ import allAreaCodes from "../../../json/countries_en.json"
 import { DriveLicense } from "./DriveLicense"
 import { pl, enGB } from "date-fns/locale"
 import i18next from "i18next"
+import { collection, addDoc } from "firebase/firestore"
+import { db } from "@/api/firebase"
 
 export const EmployeeForm = () => {
   const navigate = useNavigate()
@@ -102,15 +104,13 @@ export const EmployeeForm = () => {
     form.setValue("languages", selectedLng)
   }, [selectedLng])
 
-  const onSubmit: SubmitHandler<EmployeeContactSchemaFormType> = (data: EmployeeContactSchemaFormType) => {
-    console.log(selectedLng)
-    console.log(data)
-
+  const onSubmit: SubmitHandler<EmployeeContactSchemaFormType> = async (data: EmployeeContactSchemaFormType) => {
     type ToastType = {
       variant?: "default" | "destructive"
       title: string
       description: string
     }
+
     const openToast = ({ variant, title, description }: ToastType) => {
       toast({
         variant,
@@ -118,24 +118,22 @@ export const EmployeeForm = () => {
         description,
       })
     }
-    setTimeout(() => {
-      setIsLoading(true)
-    }, 0)
-
-    setTimeout(() => {
-      openToast({
-        title: t("labels.success"),
-        description: t("company_contact_form.send_data"),
-      })
-      alert(JSON.stringify(data))
-    }, 2000)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 3000)
-
-    /**
-     * Here write in the future function to handle endpoint
-     */
+    setIsLoading(true)
+    await addDoc(collection(db, "employee"), data)
+      .then(() =>
+        openToast({
+          title: t("labels.success"),
+          description: t("company_contact_form.send_data"),
+        })
+      )
+      .catch(() =>
+        openToast({
+          title: t("labels.error"),
+          description: t("company_contact_form.error_send_data"),
+          variant: "destructive",
+        })
+      )
+      .finally(() => setIsLoading(false))
   }
 
   return (

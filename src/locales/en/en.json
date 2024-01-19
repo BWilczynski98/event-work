@@ -65,7 +65,8 @@
       "project_support": "Project support",
       "another": "Another"
     },
-    "send_data": "Your information has been submitted. We will contact you shortly."
+    "send_data": "Your information has been submitted. We will contact you shortly.",
+    "error_send_data": "Something went wrong, try again in a few minutes"
   },
   "employee_contact_form": {
     "card_label": "Contact form for employee",
@@ -89,7 +90,8 @@
   "labels": {
     "success": "Success!",
     "send": "Send",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "error": "Error"
   },
   "news": {
     "read_more": "Read more"

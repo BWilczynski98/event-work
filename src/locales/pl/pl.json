@@ -64,7 +64,8 @@
       "project_support": "Wsparcie projektowe",
       "another": "Inne"
     },
-    "send_data": "Twoje informacje zostały przesłane. Wkrótce się z Tobą skontaktujemy."
+    "send_data": "Twoje informacje zostały przesłane. Wkrótce się z Tobą skontaktujemy.",
+    "error_send_data": "Coś poszło nie tak, spróbuj za chwile jeszcze raz."
   },
   "employee_contact_form": {
     "card_label": "Formularz kontaktowy dla pracownika",
@@ -88,7 +89,8 @@
   "labels": {
     "success": "Sukces!",
     "send": "Wyślij",
-    "cancel": "Anuluj"
+    "cancel": "Anuluj",
+    "error": "Błąd"
   },
   "news": {
     "read_more": "Czytaj dalej"
