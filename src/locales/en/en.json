@@ -47,7 +47,7 @@
     "areaCode": "The area code should have the format: '+X', where X is numbers."
   },
   "company_contact_form": {
-    "card_label": "Contact Form",
+    "card_label": "Contact Form for companies",
     "card_description": "Dzięki temu formularzowi możesz zgłosić zapytanie, nawiązać współpracę lub zadawać pytania dotyczące naszych usług.",
     "name": "Company name",
     "email": "Email",
@@ -65,12 +65,33 @@
       "project_support": "Project support",
       "another": "Another"
     },
-    "send_data": "Your information has been submitted. We will contact you shortly."
+    "send_data": "Your information has been submitted. We will contact you shortly.",
+    "error_send_data": "Something went wrong, try again in a few minutes"
+  },
+  "employee_contact_form": {
+    "card_label": "Contact form for employee",
+    "firstName": "Name",
+    "lastName": "Last name",
+    "city": "City",
+    "street": "Street",
+    "email": "Email",
+    "postalCode": "Postal code",
+    "dateOfBirth": "Date of birth",
+    "pickDate": "Pick date",
+    "phoneNumber": "Phone number",
+    "language": "Język",
+    "linguisticLevel": "Poziom",
+    "driverLicense": "Do you have a driver's license?",
+    "licenseCategory": "If yes, provide categories",
+    "have": "I Have",
+    "doNotHave": "I do not have",
+    "languages": "What languages do you know?"
   },
   "labels": {
     "success": "Success!",
     "send": "Send",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "error": "Error"
   },
   "news": {
     "read_more": "Read more"

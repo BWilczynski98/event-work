@@ -17,6 +17,8 @@ import { useNavigate } from "react-router-dom"
 import * as yup from "yup"
 import "yup-phone-lite"
 import allAreaCodes from "../../../json/countries_en.json"
+import { collection, addDoc } from "firebase/firestore"
+import { db } from "../../../api/firebase"
 
 export const CompanyForm = () => {
   /**
@@ -108,7 +110,7 @@ export const CompanyForm = () => {
   const { formState } = form
   const { errors } = formState
 
-  const onSubmit: SubmitHandler<CompanyContactSchemaFormType> = (data: CompanyContactSchemaFormType) => {
+  const onSubmit: SubmitHandler<CompanyContactSchemaFormType> = async (data: CompanyContactSchemaFormType) => {
     type ToastType = {
       variant?: "default" | "destructive"
       title: string
@@ -121,24 +123,23 @@ export const CompanyForm = () => {
         description,
       })
     }
-    setTimeout(() => {
-      setIsLoading(true)
-    }, 0)
 
-    setTimeout(() => {
-      openToast({
-        title: t("labels.success"),
-        description: t("company_contact_form.send_data"),
-      })
-      alert(JSON.stringify(data))
-    }, 2000)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 3000)
-
-    /**
-     * Here write in the future function to handle endpoint
-     */
+    setIsLoading(true)
+    await addDoc(collection(db, "company"), data)
+      .then(() =>
+        openToast({
+          title: t("labels.success"),
+          description: t("company_contact_form.send_data"),
+        })
+      )
+      .catch(() =>
+        openToast({
+          title: t("labels.error"),
+          description: t("company_contact_form.error_send_data"),
+          variant: "destructive",
+        })
+      )
+      .finally(() => setIsLoading(false))
   }
 
   return (
