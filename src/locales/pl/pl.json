@@ -47,7 +47,7 @@
     "areaCode": "Numer kierunkowy powinien mieć format: '+X', gdzie X to liczby."
   },
   "company_contact_form": {
-    "card_label": "Formularz kontaktowy",
+    "card_label": "Formularz kontaktowy dla firm",
     "name": "Nazwa firmy",
     "email": "Email",
     "phoneNumber": "Numer telefonu",
@@ -65,6 +65,25 @@
       "another": "Inne"
     },
     "send_data": "Twoje informacje zostały przesłane. Wkrótce się z Tobą skontaktujemy."
+  },
+  "employee_contact_form": {
+    "card_label": "Formularz kontaktowy dla pracownika",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "city": "Miasto",
+    "street": "Ulica",
+    "email": "Email",
+    "postalCode": "Kod pocztowy",
+    "dateOfBirth": "Data urodzenia",
+    "pickDate": "Wybierz date",
+    "phoneNumber": "Numer telefonu",
+    "language": "Język",
+    "linguisticLevel": "Poziom",
+    "driverLicense": "Czy posiadasz prawo jazdy?",
+    "licenseCategory": "Jeśli tak, podaj kategorie",
+    "have": "Posiadam",
+    "doNotHave": "Nie posiadam",
+    "languages": "Jakie znasz języki?"
   },
   "labels": {
     "success": "Sukces!",

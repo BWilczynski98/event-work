@@ -1,3 +1,5 @@
+import winnerImage from "../../assets/winner.jpg"
+
 export const current_news_pl = [
   {
     image: "https://cdn.pixabay.com/photo/2016/07/19/12/49/car-racing-1528134_1280.jpg",
@@ -5,7 +7,7 @@ export const current_news_pl = [
     description: "Takżę i w tym roku pracować będziemy podczas tegorocznej edycji. Dołącz do nas!",
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/07/19/12/49/car-racing-1528134_1280.jpg",
+    image: winnerImage,
     title: "Nagroda dla najlepszej firmy supportowej",
     description: 'Firma Topol Services tegorocznym laureatem konkursu "Słowiki"',
   },
@@ -18,7 +20,7 @@ export const current_news_en = [
     description: "We will also work during this year's edition. Join us!",
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/07/19/12/49/car-racing-1528134_1280.jpg",
+    image: winnerImage,
     title: "Best Support Company Award",
     description: `Topol Services is this year's winner of the "Słowiki" contest`,
   },

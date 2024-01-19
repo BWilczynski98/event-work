@@ -25,7 +25,7 @@ const ProjectTile = ({ image, title, description }: NewsTileProps) => {
     >
       <img
         src={image}
-        className="rounded-lg w-full aspect-[16/9]"
+        className="rounded-lg w-full aspect-[4/3]"
         ref={ref}
         alt={title}
       />
@@ -50,7 +50,7 @@ export const OurProjects = () => {
       <div className="container py-10">
         <SectionTitle>{t("our-projects.title")}</SectionTitle>
 
-        <div className="flex w-full justify-between ">
+        <div className="flex flex-wrap w-full justify-between">
           {projects.map((item, i) => {
             return (
               <div key={item.title + i}>

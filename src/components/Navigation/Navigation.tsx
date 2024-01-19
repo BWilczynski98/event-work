@@ -1,4 +1,4 @@
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { useNavigationRefsContext } from "@/context/navigationRefsContext"
 import { ArrowRight, Menu } from "lucide-react"
@@ -109,21 +109,7 @@ export const Navigation = () => {
           {/* Mobile menu */}
           <SheetContent>
             <div className="h-full flex flex-col justify-between">
-              <div className="flex flex-col my-10 space-y-4">
-                {links.map((link, i) => (
-                  <React.Fragment key={link.label + i}>
-                    <SheetClose asChild>
-                      <Button
-                        variant="ghost"
-                        onClick={link.onClick}
-                      >
-                        {link.label}
-                      </Button>
-                    </SheetClose>
-                  </React.Fragment>
-                ))}
-              </div>
-              <div className="flex flex-col justify-center space-y-4">
+              <div className="flex flex-col justify-center space-y-4 my-10">
                 <Button asChild>
                   <Link to={"/collaboration"}>
                     <div className="space-x-2 flex items-center ">
