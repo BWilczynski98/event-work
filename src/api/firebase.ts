@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCgOxpVTw64yUaf3S4jmOkBRaFT1GxgzR0",
-  authDomain: "ilona-web.firebaseapp.com",
-  projectId: "ilona-web",
-  storageBucket: "ilona-web.appspot.com",
-  messagingSenderId: "12425807836",
-  appId: "1:12425807836:web:ff3065d0bed53b5abef119",
-  measurementId: "G-RYNFM7ETVK",
+  apiKey: "AIzaSyDntzVrigPqllzflhp-D_yYQHF3L4DiZbg",
+  authDomain: "projekt-inz-e62e6.firebaseapp.com",
+  projectId: "projekt-inz-e62e6",
+  storageBucket: "projekt-inz-e62e6.appspot.com",
+  messagingSenderId: "424124953670",
+  appId: "1:424124953670:web:b006c0d7a7121ba9758647",
+  measurementId: "G-X4JWWQED1G",
 }
 
 // Initialize Firebase
